@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="scripts" href="script.js">
+    <title>Mohamed Aziz Nacef - Portfolio website</title>
+    <script src = "script.js"></script>
+    <script>
+
+    </script>
+</head>
+<body onload="document.body.style.opacity='1'">
+    <aside>
+        <a href="#about">
+            <img id="profile" onmouseover=change() onmouseleave=reset() src="./pic.jpg" alt="Profile image" width="160px">
+        </a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </aside>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>
+                Hey, I am Aziz Nacef . <br>
+                I am a B.I Student at <span class="places"><strong><a href="http://www.ihec.rnu.tn/">IHEC Carthage</a></strong></span>.<br>
+                I am interested in <span class = "places"><strong> data analytics and big data infrastructure.</strong></span>
+                I am very autonomous and pride myself on my ability to learn quicky.
+            </p>
+            <button onclick=window.open("https://github.com/a-nacef/")>Check out my Github!</button>
+        </div>
+       
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>
+                <span class="job">A semi-real time dashboard reflecting global vaccination data with respect to GDPpc</span><br>
+                <span class="places">Python - PostgreSQL - Apache Airflow - Apache Superset</span><br>
+                <span class="date">
+                    <ul>
+                        <li>Wrote custom Python scripts to <strong>extract</strong>, <strong>load</strong> and <strong> transform </strong>COV.19 vaccidantion published on a public github repository</strong>,</li>
+                        <li>Used the <strong>Pandas and Numpy APIs</strong> to perform data cleaning and transormations, prototyped in <strong>Jupyter Notebooks</strong></li>
+                        <li>Leveraged <strong>Apache Airflow</strong> for orchestration, <strong>PostgreSQL</strong> to store the data</li>
+                        <li>Visualized findings in <strong>Apache Superset</strong> </li>
+                        <li>Used Docker and the Docker Compose APIs to containerize the ETL components for portability</li>
+                    </ul>    
+            </p>
+            <button onclick="window.open('https://github.com/bacef/Vaccination-inequality','_blank')">Link to the project!</button>
+        </div>
+        
+    </section>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>
+                <span class="places">IHEC Carthage</span><br>
+                <span class="job">Bachelor's equivalent in Business Intelligence</span><br>
+                <span class="date">2020 – 2023</span><br>
+                <br>
+ 
+                <span class="places">Lycée Pilote Monastir (Monastir Pioneer High School)</span><br>
+                <span class="job">Baccalaureate in Biological Sciences | Grade 17.53/20</span><br>
+                <span class="date">2015 – 2020</span><br>
+            </p>
+            <form method="get" action="M._Neji Ghazouani_Resume.pdf" target="_blank">
+                <button type="submit">Download my Resume</button>
+             </form>
+        </div>
+        
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2 style="color  : crimson">Skills</h2>
+            <p>
+                <span class="skill">Programming languages</span><br>
+                <h3>Core:</h3>
+                 <ul>
+                     <li>Python (Pandas, Numpy, Matplotlib)</li>
+                     <li>Java</li>
+                     <li>Scala</li>
+                     <li>SQL (Postgres, Oracle Mysql syntax)</li>
+                 </ul>
+
+                 <h3>Web</h3>
+                 <ul>
+                     <li>HTML5</li>
+                     <li>CSS3</li>
+                     <li>Javascript</li>
+                 </ul>
+                 
+       
+                <span class="skill">Tools</span><br> 
+                <p id = "tools">Git/Github/REST APIs/Vim/Docker/Kafka/Maven<br>
+                    </p>
+            </p>
+            <form method="get" action="resume.png" target="_blank">
+                <button type="submit">Download my Resume</button>
+             </form>
+        </div>  
+    </section>
+</body>
+</html>
